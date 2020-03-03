@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Свойства оъекта Document</title>
+	<script language="javascript">
+		function showInfo(){
+			var bgc=document.body.style.backgroundColor = "#000000";;
+			var fgc=document.body.style.foregroundColor = "#111111";
+			var lc=document.body.style.linkColor = "#222222";
+			var al=document.body.style.alinkColor = "#333333";
+			var vlc=document.body.style.vlinkColor = "#444444";
+			var url=document.location;
+			var ref=document.referrer;
+			var t=document.title;
+			var lm=document.lastModified;
+			document.write("Цвет фона этой страницы <b>" +bgc+ "</b>.");
+			document.write("<br>Цвет текста этой страницы <b>" +fgc+ "</b>.");
+			document.write("<br>Цвет ссылок этой страницы <b>" +lc+ "</b>.");
+			document.write("<br>Цвет активной ссылки этой страницы <b>" +al+ "</b>.");
+			document.write("<br>Цвет посещенной ссылки этой страницы <b>" +vlc+ "</b>.");
+			document.write("<br>URL этой страницы <b>" +url+ "</b>.");
+			document.write("<br>До этого вы были  на странице<b>" +ref+ "</b>.");
+			document.write("<br>Заголовок этой страницы <b>" +t+ "</b>.");
+			document.write("<br>Последние изменения в документе внесены <b>" +lm+ "</b>.");
+		}
+	</script>                     
+  </head>
+  <body>
+	<input type="button" onclick="showInfo()" value="Отобразить данные страницы">
+  </body>                         
+</html>
